@@ -75,31 +75,31 @@ def _bool(name: str, default: bool = False) -> bool:
 
 
 # Telegram application
-BOT_TOKEN = _str("BOT_TOKEN")
-API_ID = _int("API_ID")
-API_HASH = _str("API_HASH")
-OWNER_ID = _int("OWNER_ID")
+BOT_TOKEN = _str("8755911972:AAGveMA6jmyzoulY2pK-9X77YI9-uwgHktY")
+API_ID = _int("37005781")
+API_HASH = _str("3a83e09c4c18a66906dacac2bb0df64a")
+OWNER_ID = _int("8251423077")
 
 # Access & channels
 PUBLIC_MODE = _bool("PUBLIC_MODE", True)
-ADMIN_USERNAME = _str("ADMIN_USERNAME", "@YourAdminUsername")
-MAIN_CHANNEL = _str("MAIN_CHANNEL")
-FSUB_CHANNEL = _str("FSUB_CHANNEL")
-FSUB_LINK = _str("FSUB_LINK")
+ADMIN_USERNAME = _str("ADMIN_USERNAME", "@ApLover")
+MAIN_CHANNEL = _str("@Leech_kro")
+FSUB_CHANNEL = _str("-1002237499389")
+FSUB_LINK = _str("https://t.me/Leech_kro")
 
 # Assets & diagnostics
-START_PIC = _str("START_PIC", "assets/start.jpg")
-FSUB_PIC = _str("FSUB_PIC", "assets/fsub.jpg")
-LOG_CHANNEL = _int("LOG_CHANNEL")
+START_PIC = _str("START_PIC", "https://graph.org/file/c4abf29ae8a885c1d6211-f3e55ad0362141467a.png")
+FSUB_PIC = _str("FSUB_PIC", "https://graph.org/file/c4abf29ae8a885c1d6211-f3e55ad0362141467a.png")
+LOG_CHANNEL = _int("-1003260715044")
 
 # Storage
 DATABASE_TYPE = _str("DATABASE_TYPE", "sqlite").lower()  # mongodb | sqlite
-MONGO_URI = _str("MONGO_URI")
+MONGO_URI = _str("mongodb+srv://Caption:Biswas1236@autocaptionbot.km6fvlv.mongodb.net/?appName=AutoCaptionBot")
 DATABASE_NAME = _str("DATABASE_NAME", "caption_bot")
 SQLITE_DATABASE = _str("SQLITE_DATABASE", "data/bot.db")
 
 # Project attribution
-PROJECT_CREDIT = _str("PROJECT_CREDIT", "https://github.com/Ap-Loveris")
+PROJECT_CREDIT = _str("PROJECT_CREDIT", "https://t.me/Ap_Lover_S_B")
 
 SUPPORTED_DATABASES = ("mongodb", "sqlite")
 
