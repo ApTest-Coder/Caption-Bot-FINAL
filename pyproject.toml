@@ -1,0 +1,18 @@
+[project]
+name = "caption-bot"
+version = "0.1.0"
+description = "Production-oriented Telegram auto caption bot with multi-channel settings."
+# 3.10 is now the true floor: the only 3.11-only construct
+# (`from datetime import UTC`) was replaced with `timezone.utc`.
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["UP017", "I001"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

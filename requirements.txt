@@ -1,0 +1,15 @@
+# Runtime dependencies only. Development/CI tooling lives in requirements-dev.txt
+# so it is never installed into the production image.
+
+# aiogram 3.7 is the floor that provides DefaultBotProperties and Bot API 7.0
+# types (ReplyParameters), which is everything this bot actually uses. The
+# previous `>=3.30` floor was far ahead of the released 3.x line and could not
+# be satisfied by pip.
+aiogram>=3.7,<4
+
+# motor pulls in the pymongo version it is actually compatible with. Pinning
+# pymongo separately (previously `>=4.15`) risks an unsatisfiable resolution
+# whenever motor's own supported range is narrower.
+motor>=3.6,<4
+
+aiosqlite>=0.21
