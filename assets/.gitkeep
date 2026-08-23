@@ -1,0 +1,10 @@
+# Keeps the assets/ directory in version control.
+#
+# The bot looks for START_PIC and FSUB_PIC here (assets/start.jpg and
+# assets/fsub.jpg by default). Those image files are git-ignored so nobody
+# commits large binaries, which means the directory would otherwise vanish from
+# a fresh clone and the README's "put your images in assets/" step would refer
+# to a path that does not exist.
+#
+# Missing images are not fatal: plugins.context.answer_with_photo checks that
+# the file exists and falls back to a plain text reply.
